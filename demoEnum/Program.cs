@@ -23,6 +23,11 @@ namespace demoEnum
             Console.WriteLine((ShippingMethod)methodId);
 
             Console.WriteLine(method.ToString());
+
+            //perse a string to enum
+            var methodName = "Express";
+            var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+            Console.WriteLine(shippingMethod);
         }
     }
 }
